@@ -77,7 +77,7 @@ def main():
         Area_accident_occured = st.selectbox("Select Accident Area: ", options=options_acc_area)
         Age_band_of_casualty = st.selectbox("Select Age of casualty: ", options=options_age)
         Day_of_week = st.selectbox("Select Day of the Week: ", options=options_day)
-        Educational_level = st.selectbox("Select Cause of Accident : ", options=options_edu)
+        Educational_level = st.selectbox("Select Education Level : ", options=options_edu)
 
         submit = st.form_submit_button("Predict")
 
