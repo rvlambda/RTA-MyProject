@@ -92,7 +92,7 @@ def main():
         Day_of_week = ordinal_encoder(Day_of_week, options_day)
         Educational_level = ordinal_encoder(Educational_level, options_edu)
 
-        data = np.array([hour,Cause_of_accident,Type_of_collision,Minute,Type_of_vehicle, 
+        data = np.array([hour,Cause_of_accident,Type_of_collision,Minute,Type_of_vehicle,Types_of_junction,
                             Area_accident_occured,Age_band_of_casualty,Day_of_week,Educational_level]).reshape(1,-1)
 
         pred = get_prediction(data=data, model=model)
