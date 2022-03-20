@@ -97,7 +97,7 @@ def main():
 
         pred = get_prediction(data=data, model=model)
 
-        st.write(f"The predicted severity is:  {pred[0]}")
+        st.write(f"The predicted severity is:  {pred}")
 
 if __name__ == '__main__':
     main()
