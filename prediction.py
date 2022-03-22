@@ -16,12 +16,12 @@ def get_prediction(data,model):
     Predict the class of a given data point.
     """
     result = model.predict(data)
-    #if result == 0:
-    #    result = "Slight Injury"
-    #elif result == 1:
-    #    result = "Serious Injury"
-    #else:
-    #    result = "Fatal Injury"
+    if result == 0:
+        result = "Slight Injury"
+    elif result == 1:
+        result = "Serious Injury"
+    else:
+        result = "Fatal Injury"
 
     return result
     
